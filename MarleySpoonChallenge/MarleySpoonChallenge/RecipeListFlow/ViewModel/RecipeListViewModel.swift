@@ -11,8 +11,9 @@ import UIKit
 
 class RecipeListViewModel {
     
-    let provider: RecipeProvider
-    
+   private let provider: RecipeProvider
+   var recipes: [Recipe] = []
+     
     init(with provider: RecipeProvider) {
         self.provider = provider
     }

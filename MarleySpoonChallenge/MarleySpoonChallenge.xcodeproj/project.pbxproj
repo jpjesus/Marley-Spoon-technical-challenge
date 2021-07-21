@@ -20,6 +20,12 @@
 		1C8DD7DE26A73A18001C692F /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD7DD26A73A18001C692F /* Tag.swift */; };
 		1C8DD7E326A73D69001C692F /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD7E226A73D69001C692F /* Chef.swift */; };
 		1C8DD7E826A76524001C692F /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD7E726A76524001C692F /* RecipeListViewModel.swift */; };
+		1C8DD7ED26A76AD8001C692F /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD7EC26A76AD8001C692F /* RecipeListViewController.swift */; };
+		1C8DD7F926A773E5001C692F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD7F826A773E5001C692F /* UIView+Extension.swift */; };
+		1C8DD80126A77688001C692F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD80026A77688001C692F /* UIColor+Extension.swift */; };
+		1C8DD80926A77DD1001C692F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD80826A77DD1001C692F /* UIViewController+Extension.swift */; };
+		1C8DD80E26A7AF98001C692F /* RecipeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD80D26A7AF98001C692F /* RecipeCellView.swift */; };
+		1C8DD81326A7B639001C692F /* StartMarleySpoonFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD81226A7B639001C692F /* StartMarleySpoonFlow.swift */; };
 		FC9B2DE03F09887827F59767 /* Pods_MarleySpoonChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297BA4FC170D7961EE4A0D2A /* Pods_MarleySpoonChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +66,12 @@
 		1C8DD7DD26A73A18001C692F /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		1C8DD7E226A73D69001C692F /* Chef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chef.swift; sourceTree = "<group>"; };
 		1C8DD7E726A76524001C692F /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
+		1C8DD7EC26A76AD8001C692F /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
+		1C8DD7F826A773E5001C692F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		1C8DD80026A77688001C692F /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		1C8DD80826A77DD1001C692F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		1C8DD80D26A7AF98001C692F /* RecipeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCellView.swift; sourceTree = "<group>"; };
+		1C8DD81226A7B639001C692F /* StartMarleySpoonFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMarleySpoonFlow.swift; sourceTree = "<group>"; };
 		297BA4FC170D7961EE4A0D2A /* Pods_MarleySpoonChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarleySpoonChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E44E5CAADF1F8C4D2490E79 /* Pods-MarleySpoonChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarleySpoonChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MarleySpoonChallenge/Pods-MarleySpoonChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		E335E4E850B59BBD683ECD91 /* Pods-MarleySpoonChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarleySpoonChallenge.release.xcconfig"; path = "Target Support Files/Pods-MarleySpoonChallenge/Pods-MarleySpoonChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +128,7 @@
 		1C8DD77226A72152001C692F /* MarleySpoonChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				1C8DD7F726A77374001C692F /* Extensions */,
 				1C8DD7C826A72D14001C692F /* Provider */,
 				1C8DD7B926A72B86001C692F /* RecipeListFlow */,
 				1C8DD7A626A721F0001C692F /* Entities */,
@@ -126,6 +139,7 @@
 				1C8DD77C26A72154001C692F /* Assets.xcassets */,
 				1C8DD77E26A72154001C692F /* LaunchScreen.storyboard */,
 				1C8DD78126A72154001C692F /* Info.plist */,
+				1C8DD81226A7B639001C692F /* StartMarleySpoonFlow.swift */,
 			);
 			path = MarleySpoonChallenge;
 			sourceTree = "<group>";
@@ -161,7 +175,8 @@
 		1C8DD7B926A72B86001C692F /* RecipeListFlow */ = {
 			isa = PBXGroup;
 			children = (
-				1C8DD7E726A76524001C692F /* RecipeListViewModel.swift */,
+				1C8DD7F226A76BA4001C692F /* ViewModel */,
+				1C8DD7F126A76BA0001C692F /* View */,
 			);
 			path = RecipeListFlow;
 			sourceTree = "<group>";
@@ -172,6 +187,41 @@
 				1C8DD7CE26A72D47001C692F /* RecipeProvider.swift */,
 			);
 			path = Provider;
+			sourceTree = "<group>";
+		};
+		1C8DD7F126A76BA0001C692F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C8DD7F326A76BAE001C692F /* Cell */,
+				1C8DD7EC26A76AD8001C692F /* RecipeListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C8DD7F226A76BA4001C692F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1C8DD7E726A76524001C692F /* RecipeListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1C8DD7F326A76BAE001C692F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1C8DD80D26A7AF98001C692F /* RecipeCellView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1C8DD7F726A77374001C692F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1C8DD7F826A773E5001C692F /* UIView+Extension.swift */,
+				1C8DD80026A77688001C692F /* UIColor+Extension.swift */,
+				1C8DD80826A77DD1001C692F /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		498D958B0D1FEA233D60D815 /* Pods */ = {
@@ -365,14 +415,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C8DD80926A77DD1001C692F /* UIViewController+Extension.swift in Sources */,
 				1C8DD7DE26A73A18001C692F /* Tag.swift in Sources */,
 				1C8DD77826A72152001C692F /* ViewController.swift in Sources */,
+				1C8DD7F926A773E5001C692F /* UIView+Extension.swift in Sources */,
+				1C8DD80126A77688001C692F /* UIColor+Extension.swift in Sources */,
+				1C8DD7ED26A76AD8001C692F /* RecipeListViewController.swift in Sources */,
 				1C8DD77426A72152001C692F /* AppDelegate.swift in Sources */,
 				1C8DD77626A72152001C692F /* SceneDelegate.swift in Sources */,
+				1C8DD81326A7B639001C692F /* StartMarleySpoonFlow.swift in Sources */,
 				1C8DD7E826A76524001C692F /* RecipeListViewModel.swift in Sources */,
 				1C8DD7AB26A7221C001C692F /* Recipe.swift in Sources */,
 				1C8DD7E326A73D69001C692F /* Chef.swift in Sources */,
 				1C8DD7CF26A72D47001C692F /* RecipeProvider.swift in Sources */,
+				1C8DD80E26A7AF98001C692F /* RecipeCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

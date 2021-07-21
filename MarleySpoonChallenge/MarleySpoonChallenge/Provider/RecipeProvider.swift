@@ -24,7 +24,9 @@ final class RecipeProvider {
     func getRecipeList(completion: @escaping (Result<HomogeneousArrayResponse<Recipe>, Error>) -> Void) {
         let query = QueryOn<Recipe>.where(contentTypeId: recipeListID)
         client.fetchArray(of: Recipe.self, matching: query) { (result: Result<HomogeneousArrayResponse<Recipe>, Error>) in
+            DispatchQueue.main.async {
             completion(result)
+            }
         }
     }
 }
