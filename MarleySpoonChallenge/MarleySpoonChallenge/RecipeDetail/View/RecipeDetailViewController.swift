@@ -36,7 +36,7 @@ class RecipeDetailViewController: UIViewController {
     lazy var recipeLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
-        label.font = UIFont.boldSystemFont(ofSize: 18)
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
         label.textColor = UIColor.label
@@ -47,7 +47,7 @@ class RecipeDetailViewController: UIViewController {
     lazy var chefLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont.systemFont(ofSize: 13)
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
         label.textColor = UIColor.borders
@@ -61,6 +61,24 @@ class RecipeDetailViewController: UIViewController {
         textView.textAlignment = .left
         textView.textColor = UIColor.label
         return textView
+    }()
+    
+    // MARK: UI Elements
+    lazy var tagCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        layout.minimumInteritemSpacing = 2
+        layout.minimumLineSpacing = 0
+        let collection = UICollectionView(frame: .zero,
+                                          collectionViewLayout: layout)
+        collection.showsHorizontalScrollIndicator = false
+        collection.showsVerticalScrollIndicator = false
+        collection.dataSource = self
+        collection.delegate = self
+        collection.backgroundColor = .clear
+        collection.register(TagCellView.self,
+                            forCellWithReuseIdentifier: TagCellView.identifier)
+        return collection
     }()
     
     private let viewModel: RecipeDetailVieModel
@@ -86,6 +104,7 @@ class RecipeDetailViewController: UIViewController {
         addSubviews()
         setViewsContrainst()
         setUI(with: viewModel.getRecipe())
+        setCollectionLayout()
     }
     
     private func addSubviews() {
@@ -94,6 +113,7 @@ class RecipeDetailViewController: UIViewController {
         self.view.addSubview(recipeLabel)
         self.view.addSubview(chefLabel)
         self.view.addSubview(descriptionArea)
+        self.view.addSubview(tagCollectionView)
     }
     
     private func setViewsContrainst() {
@@ -102,18 +122,29 @@ class RecipeDetailViewController: UIViewController {
         setRecipeLabelConstrains()
         setHeadLineLabelConstrains()
         setDescriptionTextConstrains()
+        setTagCollectionConstraints()
     }
     
     private func setUI(with recipe: Recipe) {
         self.view.backgroundColor = UIColor.background
         recipeLabel.text = recipe.title
-        chefLabel.text = recipe.chef?.name
+        let chefName = recipe.chef?.name ?? ""
+        if !chefName.isEmpty {
+            chefLabel.text = "by: " + chefName
+        }
         descriptionArea.attributedText = recipe.description.htmlToAttributedString
         setRecipeImage(with: recipe.image?.url, fileName: recipe.image?.file?.fileName ?? "")
     }
     
     private func setRecipeImage(with image: URL?, fileName: String) {
         recipeImage.loadImage(withUrl: image, fileName: fileName)
+    }
+    
+    private func setCollectionLayout() {
+        let tagsCount = viewModel.getRecipe().tags.count
+        if tagsCount > 0 {
+            tagCollectionView.reloadData()
+        }
     }
 }
 // MARK: - Constraints
@@ -143,23 +174,59 @@ private extension RecipeDetailViewController {
         recipeLabel.bottomAnchor.constraint(equalTo: recipeImage.topAnchor, constant: -5).isActive = true
         recipeLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 10).isActive = true
         recipeLabel.trailingAnchor.constraint(equalTo:
-            containerView.trailingAnchor, constant: -10).isActive = true
+                                                containerView.trailingAnchor, constant: -10).isActive = true
     }
     
     private func setHeadLineLabelConstrains() {
         chefLabel.translatesAutoresizingMaskIntoConstraints = false
         chefLabel.topAnchor.constraint(equalTo: recipeImage.bottomAnchor, constant: 5).isActive = true
         chefLabel.trailingAnchor.constraint(equalTo:
-            containerView.trailingAnchor, constant: -15).isActive = true
+                                                containerView.trailingAnchor, constant: -15).isActive = true
     }
     
     private func setDescriptionTextConstrains() {
         descriptionArea.translatesAutoresizingMaskIntoConstraints = false
         descriptionArea.topAnchor.constraint(equalTo: chefLabel.bottomAnchor, constant: 15).isActive = true
         descriptionArea.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 15).isActive = true
-        descriptionArea.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -10).isActive = true
         descriptionArea.trailingAnchor.constraint(equalTo:
-            containerView.trailingAnchor, constant: -15).isActive = true
+                                                    containerView.trailingAnchor, constant: -15).isActive = true
+        descriptionArea.heightAnchor.constraint(lessThanOrEqualTo: containerView.heightAnchor, multiplier: 1).isActive = true
         descriptionArea.widthAnchor.constraint(lessThanOrEqualTo: containerView.widthAnchor, multiplier: 1).isActive = true
+    }
+    
+    private func setTagCollectionConstraints() {
+        tagCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        tagCollectionView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -10).isActive = true
+        tagCollectionView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 10).isActive = true
+        tagCollectionView.topAnchor.constraint(equalTo: descriptionArea.bottomAnchor, constant: 5).isActive = true
+        tagCollectionView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -5).isActive = true
+        tagCollectionView.heightAnchor.constraint(equalToConstant: 20).isActive = true
+    }
+}
+
+extension RecipeDetailViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        let tagsCount = viewModel.getRecipe().tags.count
+        return tagsCount
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TagCellView.identifier,
+                                                            for: indexPath) as? TagCellView else {
+            return UICollectionViewCell(frame: .zero)
+        }
+        cell.setTag(with: viewModel.getRecipe().tags[indexPath.row].name ?? "")
+        cell.clipsToBounds = false
+        return cell
+    }
+}
+
+// MARK: - Collection Flow Layout
+extension RecipeDetailViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 70, height: 20)
     }
 }

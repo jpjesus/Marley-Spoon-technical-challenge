@@ -12,6 +12,7 @@
 		1C18971326AB26DF004015D0 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C18971226AB26DF004015D0 /* RecipeDetailViewController.swift */; };
 		1C18972226AB8F62004015D0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C18972126AB8F61004015D0 /* String+Extension.swift */; };
 		1C18972726AB9179004015D0 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C18972626AB9179004015D0 /* UINavigationController+Extensions.swift */; };
+		1C18972D26ABA5C0004015D0 /* TagCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C18972C26ABA5C0004015D0 /* TagCellView.swift */; };
 		1C8DD77426A72152001C692F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD77326A72152001C692F /* AppDelegate.swift */; };
 		1C8DD77626A72152001C692F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD77526A72152001C692F /* SceneDelegate.swift */; };
 		1C8DD77826A72152001C692F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD77726A72152001C692F /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 		1C18971226AB26DF004015D0 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		1C18972126AB8F61004015D0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		1C18972626AB9179004015D0 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		1C18972C26ABA5C0004015D0 /* TagCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCellView.swift; sourceTree = "<group>"; };
 		1C8DD77026A72152001C692F /* MarleySpoonChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarleySpoonChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8DD77326A72152001C692F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C8DD77526A72152001C692F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		1C18970826AB2174004015D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1C18972B26ABA5A8004015D0 /* Cell */,
 				1C18971226AB26DF004015D0 /* RecipeDetailViewController.swift */,
 			);
 			path = View;
@@ -136,6 +139,14 @@
 				1C18970A26AB2394004015D0 /* RecipeDetailVieModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1C18972B26ABA5A8004015D0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1C18972C26ABA5C0004015D0 /* TagCellView.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		1C8DD76726A72152001C692F = {
@@ -473,6 +484,7 @@
 				1C18971326AB26DF004015D0 /* RecipeDetailViewController.swift in Sources */,
 				1C8DD7CF26A72D47001C692F /* RecipeProvider.swift in Sources */,
 				1C8DD80E26A7AF98001C692F /* RecipeCellView.swift in Sources */,
+				1C18972D26ABA5C0004015D0 /* TagCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
