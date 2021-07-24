@@ -28,4 +28,12 @@ class RecipeListViewModel {
             }
         }
     }
+    
+    func showRecipeDetail(with recipe: Recipe, navigation: UINavigationController?) {
+        let viewModel = RecipeDetailVieModel(with: recipe)
+        let vc = RecipeDetailViewController(with: viewModel)
+        navigation?.modalTransitionStyle = .coverVertical
+        navigation?.modalPresentationStyle = .fullScreen
+        navigation?.pushViewController(vc, animated: true)
+    }
 }

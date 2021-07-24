@@ -51,13 +51,12 @@ class RecipeCellView: UICollectionViewCell {
     func setCell(with recipe: Recipe) {
         self.recipe = recipe
         recipeLabel.text = recipe.title
-        //setRecipeImage(with: recipe.image.)
+        setRecipeImage(with: recipe.image?.file?.url, fileName: recipe.image?.file?.fileName ?? "")
         
     }
     
-    private func setRecipeImage(with image: String) {
-//        let imageUrl = URL(string: image) ?? URL(fileURLWithPath: "")
-//        recipeImage.loadImage(from: imageUrl)
+    private func setRecipeImage(with image: URL?, fileName: String) {
+        recipeImage.loadImage(withUrl: image, fileName: fileName)
     }
     
     private func addSubviews() {

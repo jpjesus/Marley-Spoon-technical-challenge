@@ -81,6 +81,16 @@ extension RecipeListViewController: UICollectionViewDataSource {
         return cell
     }
 }
+// MARK: - Collection Delegate
+extension RecipeListViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.showRecipeDetail(with: viewModel.recipes[indexPath.row],
+                                   navigation: self.navigationController)
+    }
+}
+
+
 // MARK: - Collection Flow Layout
 extension RecipeListViewController: UICollectionViewDelegateFlowLayout {
     
@@ -90,13 +100,14 @@ extension RecipeListViewController: UICollectionViewDelegateFlowLayout {
             
         case .portrait,
              .portraitUpsideDown:
+            return CGSize(width: view.bounds.width,
+                          height: 150)
+        case .landscapeLeft,
+             .landscapeRight:
             return CGSize(width: setWidhtSize(2,
                                               collectionViewLayout: collectionViewLayout,
                                               collectionView: collectionView),
-                          height: self.view.bounds.height/4)
-        case .landscapeLeft,
-             .landscapeRight:
-            return CGSize(width: setWidhtSize(3, collectionViewLayout: collectionViewLayout, collectionView: collectionView), height: self.view.bounds.height/2)
+                          height: self.view.bounds.height/2)
         default:
             return CGSize.zero
         }
