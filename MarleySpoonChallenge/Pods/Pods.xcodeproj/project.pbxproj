@@ -7,22 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0288A3022C33505989C54048CB36F4F6 /* Pods-MarleySpoonChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A702D67CAD9B770B376316AA09755D58 /* Pods-MarleySpoonChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0288A3022C33505989C54048CB36F4F6 /* Pods-MarleySpoonChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5918DF26F0DCEBC2A9C69F44F7ABF001 /* Pods-MarleySpoonChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E359E1D58ED3D7F4C67BCB9D54B8506 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964D3FABB380C4125CE6D429E0314E4 /* Client.swift */; };
 		258423E481F5C5C8C5441BF9527D4C44 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F31F74CC79FBCED21A0FB3814190D2 /* Entry.swift */; };
 		35DDBED6D30FFEDD1CC1D910E00C0E4F /* DataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92622E52A98D424BB9AF6481E8F55DF /* DataCache.swift */; };
 		44FE63F2C468D86F647E6478D2884492 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88756DBE3231A349371C90BC105A17BE /* Date.swift */; };
 		456DD073F034AEC7DDF468989AF08FCC /* RichText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244230111F824453291EB5AB8B2817 /* RichText.swift */; };
+		4AB652DB407FA9A4D469C1928F06B739 /* Pods-MarleySpoonChallengeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B794C13BA6F22362FCE5DA2EBA5F4F /* Pods-MarleySpoonChallengeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CDB3287F5D1900CC6B9BCA5DD2BF9CB /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9AB9B5C3C078206B0139BBB570380B /* Link.swift */; };
 		5187751FB45470452F493E48D45197E5 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417C6C9D540DC4C136A214FABAFB7052 /* Endpoints.swift */; };
 		54C427C56BEE39AA9329DA4FA2489AD9 /* ContentfulLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CD9CDBE2FABC1CE71FA597B1E49BE9 /* ContentfulLogger.swift */; };
 		58391627BEE0A2E4B94FAA5CE8A88BE7 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8D4648E5B7F87F51EC905796C5BBCD /* Locale.swift */; };
 		6C5126E5E9E4662000834E9119EDB397 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5430C16025F54932752BB604DF8489 /* Location.swift */; };
+		709D5E21A7EB6F781F760CF706CD60E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		713F01FA6181514AC1E9735AC6CD8594 /* TypedQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF76523F8BB88EE9DFA943B3B53C139 /* TypedQuery.swift */; };
 		7CE62A3313283FB855C85B16EB69D046 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079B0B1E38BCE88A494EDD963754FB95 /* Query.swift */; };
 		81D5F0D117329136D349B3FD487CCA63 /* Contentful-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D407D3F9020C49965979D754F1C0C63B /* Contentful-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8870506EBB34494F0AAE184ACB9234B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		9386B838E8B3187794C87A57FE08042F /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196A22804DA74CD1B906B76131414B5F /* Resource.swift */; };
+		96CB67996ECA00D4E651F423E584384F /* Pods-MarleySpoonChallengeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20421F02799F6ACFF2AB14933BCBF6A2 /* Pods-MarleySpoonChallengeTests-dummy.m */; };
 		9A4991A94B0E046AF8EA0BC899F840AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		9A915057724AE4167880558C4464B150 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A1ED6A33E9D94C3A4E91F5D84B66C /* Field.swift */; };
 		A0C9FDD3B22E0AFED2AB247F412DBBE4 /* QueryOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4AF9DC07E858BA1D4CB3C7CBDE8FD /* QueryOperation.swift */; };
@@ -38,7 +41,7 @@
 		D2E600D95299B1264B105F53B252F4CF /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C7F3C8EB460218F9F86D943455307C /* Decodable.swift */; };
 		D5F630501E8DE37290A9B5ED02015016 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B31F37E9CBE7E307C8F3CE09746D4B7 /* Error.swift */; };
 		DFBB29C56593C098359C7E5731B5A009 /* SyncSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB6988930E1C0C831C6B033B06AB0DD /* SyncSpace.swift */; };
-		E788FEDCC55E9CCFBF1F056030E8C992 /* Pods-MarleySpoonChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FFA6FF67911553C1DA9569A8C42A7D /* Pods-MarleySpoonChallenge-dummy.m */; };
+		E788FEDCC55E9CCFBF1F056030E8C992 /* Pods-MarleySpoonChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E61F404AAC03C2713734F67275A34630 /* Pods-MarleySpoonChallenge-dummy.m */; };
 		EC002CE823E882A0ADEE35E69C943856 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9783A016C063A6B9539C70B4DDE74 /* Util.swift */; };
 		F931B0593C76F1E5D8BB12F2FD3C45BF /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D6313E5F2E6106674950D981B131E /* ContentType.swift */; };
 /* End PBXBuildFile section */
@@ -51,41 +54,61 @@
 			remoteGlobalIDString = 0D7FD5275837E00363421054899B2918;
 			remoteInfo = Contentful;
 		};
+		357AEA30B347283D3B1C0EB00E92E78D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D7FD5275837E00363421054899B2918;
+			remoteInfo = Contentful;
+		};
+		A4AF66B7D6A3417F44672E6B6DC71D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97A3465CE760567FBD3B26A1259094E6;
+			remoteInfo = "Pods-MarleySpoonChallenge";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		079B0B1E38BCE88A494EDD963754FB95 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/Contentful/Query.swift; sourceTree = "<group>"; };
 		0964D3FABB380C4125CE6D429E0314E4 /* Client.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Sources/Contentful/Client.swift; sourceTree = "<group>"; };
 		0F0D6313E5F2E6106674950D981B131E /* ContentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentType.swift; path = Sources/Contentful/ContentType.swift; sourceTree = "<group>"; };
-		0F5EF157DE7585D5F6FB5C005DDD2DA1 /* Pods-MarleySpoonChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarleySpoonChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		196A22804DA74CD1B906B76131414B5F /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Contentful/Resource.swift; sourceTree = "<group>"; };
 		1B31F37E9CBE7E307C8F3CE09746D4B7 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Contentful/Error.swift; sourceTree = "<group>"; };
-		228CB709CC73E4102F3F569482462602 /* Pods-MarleySpoonChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarleySpoonChallenge.release.xcconfig"; sourceTree = "<group>"; };
-		2AB9FFF98B4F5E547990765D1240010F /* Pods-MarleySpoonChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarleySpoonChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		20421F02799F6ACFF2AB14933BCBF6A2 /* Pods-MarleySpoonChallengeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MarleySpoonChallengeTests-dummy.m"; sourceTree = "<group>"; };
+		3826321A8F2B98E67E7D37C9C1B6CD93 /* Pods-MarleySpoonChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarleySpoonChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		39C7F3C8EB460218F9F86D943455307C /* Decodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decodable.swift; path = Sources/Contentful/Decodable.swift; sourceTree = "<group>"; };
 		3BF76523F8BB88EE9DFA943B3B53C139 /* TypedQuery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypedQuery.swift; path = Sources/Contentful/TypedQuery.swift; sourceTree = "<group>"; };
 		3E8D4648E5B7F87F51EC905796C5BBCD /* Locale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locale.swift; path = Sources/Contentful/Locale.swift; sourceTree = "<group>"; };
+		4061110D3BF89025BDABAC57D3493EFA /* Pods-MarleySpoonChallengeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MarleySpoonChallengeTests.modulemap"; sourceTree = "<group>"; };
 		417C6C9D540DC4C136A214FABAFB7052 /* Endpoints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoints.swift; path = Sources/Contentful/Endpoints.swift; sourceTree = "<group>"; };
+		41EC0797A3577770143E4F2C2A95404F /* Pods-MarleySpoonChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarleySpoonChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D84A114C803646F51AF26A666F6C784 /* Persistence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Persistence.swift; path = Sources/Contentful/Persistence.swift; sourceTree = "<group>"; };
 		543EF0672A4204A323569EF9B343169C /* Contentful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Contentful.debug.xcconfig; sourceTree = "<group>"; };
+		5918DF26F0DCEBC2A9C69F44F7ABF001 /* Pods-MarleySpoonChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MarleySpoonChallenge-umbrella.h"; sourceTree = "<group>"; };
 		5BD2C779785A890306395F0491F5CEA1 /* ClientConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClientConfiguration.swift; path = Sources/Contentful/ClientConfiguration.swift; sourceTree = "<group>"; };
 		61997784875DA471B6688221F493D623 /* Sys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sys.swift; path = Sources/Contentful/Sys.swift; sourceTree = "<group>"; };
 		636A1ED6A33E9D94C3A4E91F5D84B66C /* Field.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Field.swift; path = Sources/Contentful/Field.swift; sourceTree = "<group>"; };
-		67F8F7E61DDF57031A5A55A362971678 /* Pods-MarleySpoonChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MarleySpoonChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6DEA48DAE0EE04D2328AF2075AB50F10 /* Pods-MarleySpoonChallenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MarleySpoonChallenge-frameworks.sh"; sourceTree = "<group>"; };
+		6E4E7FE0EA53425BDD05059EC2AB3E97 /* Pods-MarleySpoonChallengeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MarleySpoonChallengeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6FD1186060DDBBA48C57A1F9D928080C /* ImageOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageOptions.swift; path = Sources/Contentful/ImageOptions/ImageOptions.swift; sourceTree = "<group>"; };
 		705CB20111F7C57B99126F7147A1F54D /* Pods_MarleySpoonChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MarleySpoonChallenge.framework; path = "Pods-MarleySpoonChallenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7297AE77C8FE74F044D4F0F74BFD1ACA /* Contentful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Contentful.framework; path = Contentful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		741F9CCBE8EDF4DA8A1715E851FBCC92 /* Pods-MarleySpoonChallenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MarleySpoonChallenge-frameworks.sh"; sourceTree = "<group>"; };
 		7D4257DAD047BDA74E6CB7ECB1E478BD /* Contentful-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Contentful-prefix.pch"; sourceTree = "<group>"; };
-		81FFA6FF67911553C1DA9569A8C42A7D /* Pods-MarleySpoonChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MarleySpoonChallenge-dummy.m"; sourceTree = "<group>"; };
 		88756DBE3231A349371C90BC105A17BE /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Sources/Contentful/Date.swift; sourceTree = "<group>"; };
+		88FE78C114DDF8899CDB65C2808BAA2A /* Pods-MarleySpoonChallengeTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarleySpoonChallengeTests-Info.plist"; sourceTree = "<group>"; };
+		98B794C13BA6F22362FCE5DA2EBA5F4F /* Pods-MarleySpoonChallengeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MarleySpoonChallengeTests-umbrella.h"; sourceTree = "<group>"; };
 		9B931E274A3B24F5179526862880A1FF /* Space.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Space.swift; path = Sources/Contentful/Space.swift; sourceTree = "<group>"; };
+		9D6127A8C0969572482E40A24984E140 /* Pods_MarleySpoonChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MarleySpoonChallengeTests.framework; path = "Pods-MarleySpoonChallengeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7C91657C244377BFA2DD862328DA22 /* Pods-MarleySpoonChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarleySpoonChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A103BD553193E07940A4E4E41ED59551 /* Pods-MarleySpoonChallenge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarleySpoonChallenge-Info.plist"; sourceTree = "<group>"; };
 		A1CD9CDBE2FABC1CE71FA597B1E49BE9 /* ContentfulLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentfulLogger.swift; path = Sources/Contentful/ContentfulLogger.swift; sourceTree = "<group>"; };
-		A702D67CAD9B770B376316AA09755D58 /* Pods-MarleySpoonChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MarleySpoonChallenge-umbrella.h"; sourceTree = "<group>"; };
-		A7764B3C3923E47C259622B084D06DEB /* Pods-MarleySpoonChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MarleySpoonChallenge.modulemap"; sourceTree = "<group>"; };
+		A7D8E897C8F90033404F356F54AB2890 /* Pods-MarleySpoonChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarleySpoonChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
 		AA9AB9B5C3C078206B0139BBB570380B /* Link.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Link.swift; path = Sources/Contentful/Link.swift; sourceTree = "<group>"; };
+		ABB92D9C024608DABCACD42B38B57089 /* Pods-MarleySpoonChallengeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarleySpoonChallengeTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		ACE9783A016C063A6B9539C70B4DDE74 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = Sources/Contentful/Util.swift; sourceTree = "<group>"; };
 		AD1A1B07889FC1F62A8069E45B0EE4A4 /* Contentful.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Contentful.release.xcconfig; sourceTree = "<group>"; };
 		ADB6988930E1C0C831C6B033B06AB0DD /* SyncSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyncSpace.swift; path = Sources/Contentful/SyncSpace.swift; sourceTree = "<group>"; };
@@ -93,15 +116,19 @@
 		B7B8808BD72B2A6D7C3EFAE2558FFC4C /* Contentful-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Contentful-Info.plist"; sourceTree = "<group>"; };
 		BE13DFE8299F40B6D93A75F6740C30B1 /* Contentful-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Contentful-dummy.m"; sourceTree = "<group>"; };
 		D094C1D921A2A9AF17A6C910733B522A /* Asset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Asset.swift; path = Sources/Contentful/Asset.swift; sourceTree = "<group>"; };
+		D23A5FD462182ABA896217E804AA764F /* Pods-MarleySpoonChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MarleySpoonChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D407D3F9020C49965979D754F1C0C63B /* Contentful-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Contentful-umbrella.h"; sourceTree = "<group>"; };
 		D8A0B52735EB2D342F29E511BA4D69BB /* Contentful.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Contentful.modulemap; sourceTree = "<group>"; };
 		D92622E52A98D424BB9AF6481E8F55DF /* DataCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataCache.swift; path = Sources/Contentful/DataCache.swift; sourceTree = "<group>"; };
-		DB9D69530F9B7D5706C8C4956740B618 /* Pods-MarleySpoonChallenge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarleySpoonChallenge-Info.plist"; sourceTree = "<group>"; };
 		E228E7A2E8F641840F1D30D217F23DCB /* Client+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Client+UIKit.swift"; path = "Sources/Contentful/UIKit/Client+UIKit.swift"; sourceTree = "<group>"; };
+		E4A4640385030F4F8787AB7C51199EC4 /* Pods-MarleySpoonChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MarleySpoonChallenge.modulemap"; sourceTree = "<group>"; };
+		E61F404AAC03C2713734F67275A34630 /* Pods-MarleySpoonChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MarleySpoonChallenge-dummy.m"; sourceTree = "<group>"; };
 		EC5430C16025F54932752BB604DF8489 /* Location.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Sources/Contentful/Location.swift; sourceTree = "<group>"; };
 		EE1ADAFE797ABAB004D47654B515D310 /* ArrayResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayResponse.swift; path = Sources/Contentful/ArrayResponse.swift; sourceTree = "<group>"; };
 		F4C4AF9DC07E858BA1D4CB3C7CBDE8FD /* QueryOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryOperation.swift; path = Sources/Contentful/QueryOperation.swift; sourceTree = "<group>"; };
+		F8B3C216E0585CE44CF2C89FE7B452F9 /* Pods-MarleySpoonChallengeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MarleySpoonChallengeTests-frameworks.sh"; sourceTree = "<group>"; };
 		FB244230111F824453291EB5AB8B2817 /* RichText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RichText.swift; path = Sources/Contentful/RichText.swift; sourceTree = "<group>"; };
+		FE92E9E17E8DF3DF8C9F7C72C383EA0B /* Pods-MarleySpoonChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarleySpoonChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +137,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8870506EBB34494F0AAE184ACB9234B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5AC09B45FE8C9BDC53A8208C8B85ED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709D5E21A7EB6F781F760CF706CD60E6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,21 +159,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		097AB5DE12F768B705714043A0B758AE /* Targets Support Files */ = {
+		02E629FB170FB8A52202113BF5A39FCD /* Pods-MarleySpoonChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				FB1268ED2D2BBC8AF8588A973E565DE1 /* Pods-MarleySpoonChallenge */,
+				E4A4640385030F4F8787AB7C51199EC4 /* Pods-MarleySpoonChallenge.modulemap */,
+				D23A5FD462182ABA896217E804AA764F /* Pods-MarleySpoonChallenge-acknowledgements.markdown */,
+				A7D8E897C8F90033404F356F54AB2890 /* Pods-MarleySpoonChallenge-acknowledgements.plist */,
+				E61F404AAC03C2713734F67275A34630 /* Pods-MarleySpoonChallenge-dummy.m */,
+				741F9CCBE8EDF4DA8A1715E851FBCC92 /* Pods-MarleySpoonChallenge-frameworks.sh */,
+				A103BD553193E07940A4E4E41ED59551 /* Pods-MarleySpoonChallenge-Info.plist */,
+				5918DF26F0DCEBC2A9C69F44F7ABF001 /* Pods-MarleySpoonChallenge-umbrella.h */,
+				FE92E9E17E8DF3DF8C9F7C72C383EA0B /* Pods-MarleySpoonChallenge.debug.xcconfig */,
+				3826321A8F2B98E67E7D37C9C1B6CD93 /* Pods-MarleySpoonChallenge.release.xcconfig */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		1C7D590D0599570A07B55207AA3EB312 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7297AE77C8FE74F044D4F0F74BFD1ACA /* Contentful.framework */,
-				705CB20111F7C57B99126F7147A1F54D /* Pods_MarleySpoonChallenge.framework */,
-			);
-			name = Products;
+			name = "Pods-MarleySpoonChallenge";
+			path = "Target Support Files/Pods-MarleySpoonChallenge";
 			sourceTree = "<group>";
 		};
 		4D03C17B4A2695043DC94B26A5299915 /* Pods */ = {
@@ -155,6 +190,42 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		8939C41393E66BCAF2D3861CAD72758A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7297AE77C8FE74F044D4F0F74BFD1ACA /* Contentful.framework */,
+				705CB20111F7C57B99126F7147A1F54D /* Pods_MarleySpoonChallenge.framework */,
+				9D6127A8C0969572482E40A24984E140 /* Pods_MarleySpoonChallengeTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		924A2F0317C276F29C6E720D48B4B935 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				02E629FB170FB8A52202113BF5A39FCD /* Pods-MarleySpoonChallenge */,
+				C9F19AF69645E462C6A60DEA547CA0C2 /* Pods-MarleySpoonChallengeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C9F19AF69645E462C6A60DEA547CA0C2 /* Pods-MarleySpoonChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4061110D3BF89025BDABAC57D3493EFA /* Pods-MarleySpoonChallengeTests.modulemap */,
+				6E4E7FE0EA53425BDD05059EC2AB3E97 /* Pods-MarleySpoonChallengeTests-acknowledgements.markdown */,
+				ABB92D9C024608DABCACD42B38B57089 /* Pods-MarleySpoonChallengeTests-acknowledgements.plist */,
+				20421F02799F6ACFF2AB14933BCBF6A2 /* Pods-MarleySpoonChallengeTests-dummy.m */,
+				F8B3C216E0585CE44CF2C89FE7B452F9 /* Pods-MarleySpoonChallengeTests-frameworks.sh */,
+				88FE78C114DDF8899CDB65C2808BAA2A /* Pods-MarleySpoonChallengeTests-Info.plist */,
+				98B794C13BA6F22362FCE5DA2EBA5F4F /* Pods-MarleySpoonChallengeTests-umbrella.h */,
+				41EC0797A3577770143E4F2C2A95404F /* Pods-MarleySpoonChallengeTests.debug.xcconfig */,
+				9D7C91657C244377BFA2DD862328DA22 /* Pods-MarleySpoonChallengeTests.release.xcconfig */,
+			);
+			name = "Pods-MarleySpoonChallengeTests";
+			path = "Target Support Files/Pods-MarleySpoonChallengeTests";
 			sourceTree = "<group>";
 		};
 		CCE3D73B7C0EE12AC72158252596E729 /* Support Files */ = {
@@ -178,8 +249,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				4D03C17B4A2695043DC94B26A5299915 /* Pods */,
-				1C7D590D0599570A07B55207AA3EB312 /* Products */,
-				097AB5DE12F768B705714043A0B758AE /* Targets Support Files */,
+				8939C41393E66BCAF2D3861CAD72758A /* Products */,
+				924A2F0317C276F29C6E720D48B4B935 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,23 +307,6 @@
 			path = Contentful;
 			sourceTree = "<group>";
 		};
-		FB1268ED2D2BBC8AF8588A973E565DE1 /* Pods-MarleySpoonChallenge */ = {
-			isa = PBXGroup;
-			children = (
-				A7764B3C3923E47C259622B084D06DEB /* Pods-MarleySpoonChallenge.modulemap */,
-				67F8F7E61DDF57031A5A55A362971678 /* Pods-MarleySpoonChallenge-acknowledgements.markdown */,
-				2AB9FFF98B4F5E547990765D1240010F /* Pods-MarleySpoonChallenge-acknowledgements.plist */,
-				81FFA6FF67911553C1DA9569A8C42A7D /* Pods-MarleySpoonChallenge-dummy.m */,
-				6DEA48DAE0EE04D2328AF2075AB50F10 /* Pods-MarleySpoonChallenge-frameworks.sh */,
-				DB9D69530F9B7D5706C8C4956740B618 /* Pods-MarleySpoonChallenge-Info.plist */,
-				A702D67CAD9B770B376316AA09755D58 /* Pods-MarleySpoonChallenge-umbrella.h */,
-				0F5EF157DE7585D5F6FB5C005DDD2DA1 /* Pods-MarleySpoonChallenge.debug.xcconfig */,
-				228CB709CC73E4102F3F569482462602 /* Pods-MarleySpoonChallenge.release.xcconfig */,
-			);
-			name = "Pods-MarleySpoonChallenge";
-			path = "Target Support Files/Pods-MarleySpoonChallenge";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -261,6 +315,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				81D5F0D117329136D349B3FD487CCA63 /* Contentful-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5768D987AFD6B379E47A0BD58F5BD89D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AB652DB407FA9A4D469C1928F06B739 /* Pods-MarleySpoonChallengeTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +353,26 @@
 			name = Contentful;
 			productName = Contentful;
 			productReference = 7297AE77C8FE74F044D4F0F74BFD1ACA /* Contentful.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65F8E6959706B4A14583C0F8358830E7 /* Pods-MarleySpoonChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A432F81FF89899F620193745BA8E259 /* Build configuration list for PBXNativeTarget "Pods-MarleySpoonChallengeTests" */;
+			buildPhases = (
+				5768D987AFD6B379E47A0BD58F5BD89D /* Headers */,
+				B5B2EEBD7E89257B5BA08C2F88CC0E25 /* Sources */,
+				E5AC09B45FE8C9BDC53A8208C8B85ED8 /* Frameworks */,
+				77D3E1D914407C08ADBEEC25D4101216 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF09A15FBDB7F300D285481D3F10DF22 /* PBXTargetDependency */,
+				D9EBA7A7D158B02C4DB5185E64006C48 /* PBXTargetDependency */,
+			);
+			name = "Pods-MarleySpoonChallengeTests";
+			productName = "Pods-MarleySpoonChallengeTests";
+			productReference = 9D6127A8C0969572482E40A24984E140 /* Pods_MarleySpoonChallengeTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		97A3465CE760567FBD3B26A1259094E6 /* Pods-MarleySpoonChallenge */ = {
@@ -330,18 +412,26 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1C7D590D0599570A07B55207AA3EB312 /* Products */;
+			productRefGroup = 8939C41393E66BCAF2D3861CAD72758A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0D7FD5275837E00363421054899B2918 /* Contentful */,
 				97A3465CE760567FBD3B26A1259094E6 /* Pods-MarleySpoonChallenge */,
+				65F8E6959706B4A14583C0F8358830E7 /* Pods-MarleySpoonChallengeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6C2CEEBFD240A9AA09086E7A35F46BCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D3E1D914407C08ADBEEC25D4101216 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,6 +492,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5B2EEBD7E89257B5BA08C2F88CC0E25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CB67996ECA00D4E651F423E584384F /* Pods-MarleySpoonChallengeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -410,6 +508,18 @@
 			name = Contentful;
 			target = 0D7FD5275837E00363421054899B2918 /* Contentful */;
 			targetProxy = 0EB31FBA60361F98585A9604482AA4DA /* PBXContainerItemProxy */;
+		};
+		D9EBA7A7D158B02C4DB5185E64006C48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MarleySpoonChallenge";
+			target = 97A3465CE760567FBD3B26A1259094E6 /* Pods-MarleySpoonChallenge */;
+			targetProxy = A4AF66B7D6A3417F44672E6B6DC71D1B /* PBXContainerItemProxy */;
+		};
+		EF09A15FBDB7F300D285481D3F10DF22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Contentful;
+			target = 0D7FD5275837E00363421054899B2918 /* Contentful */;
+			targetProxy = 357AEA30B347283D3B1C0EB00E92E78D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -515,6 +625,44 @@
 			};
 			name = Release;
 		};
+		371D173247121E5B3FFB11445AC21B20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D7C91657C244377BFA2DD862328DA22 /* Pods-MarleySpoonChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MarleySpoonChallengeTests/Pods-MarleySpoonChallengeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MarleySpoonChallengeTests/Pods-MarleySpoonChallengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -579,7 +727,7 @@
 		};
 		79A0B64B86AB3EF4C2B5E165ECF28AE9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 228CB709CC73E4102F3F569482462602 /* Pods-MarleySpoonChallenge.release.xcconfig */;
+			baseConfigurationReference = 3826321A8F2B98E67E7D37C9C1B6CD93 /* Pods-MarleySpoonChallenge.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -615,9 +763,46 @@
 			};
 			name = Release;
 		};
+		8BEAA15A126C9499F9565D81EA04DB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EC0797A3577770143E4F2C2A95404F /* Pods-MarleySpoonChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MarleySpoonChallengeTests/Pods-MarleySpoonChallengeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MarleySpoonChallengeTests/Pods-MarleySpoonChallengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A83862811821118BE63BA39567CBC890 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F5EF157DE7585D5F6FB5C005DDD2DA1 /* Pods-MarleySpoonChallenge.debug.xcconfig */;
+			baseConfigurationReference = FE92E9E17E8DF3DF8C9F7C72C383EA0B /* Pods-MarleySpoonChallenge.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -689,6 +874,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1A432F81FF89899F620193745BA8E259 /* Build configuration list for PBXNativeTarget "Pods-MarleySpoonChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BEAA15A126C9499F9565D81EA04DB73 /* Debug */,
+				371D173247121E5B3FFB11445AC21B20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

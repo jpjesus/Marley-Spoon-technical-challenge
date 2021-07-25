@@ -7,11 +7,11 @@
 
 import Foundation
 
-class RecipeDetailVieModel {
+class RecipeDetailViewModel: RecipeDetailProtocol {
     
     private let recipe: Recipe
     
-    init(with recipe: Recipe) {
+    required init(with recipe: Recipe) {
         self.recipe = recipe
     }
     

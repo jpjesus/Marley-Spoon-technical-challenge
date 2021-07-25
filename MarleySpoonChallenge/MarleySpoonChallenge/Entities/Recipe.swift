@@ -19,7 +19,7 @@ class Recipe: EntryDecodable, FieldKeysQueryable {
     
     var id: String = ""
     var title: String = ""
-    var calories: Int = 0
+    var calories: Double = 0.0
     var description: String = ""
     var image: Asset?
     var thumbnail: String = ""
@@ -48,7 +48,7 @@ class Recipe: EntryDecodable, FieldKeysQueryable {
         
         let container = try decoder.contentfulFieldsContainer(keyedBy: Recipe.FieldKeys.self)
         title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
-        calories = try container.decodeIfPresent(Int.self, forKey: .calories) ?? 0
+        calories = try container.decodeIfPresent(Double.self, forKey: .calories) ?? 0
         description = try container.decodeIfPresent(String.self, forKey: .description) ?? ""
         
         try container.resolveLink(forKey: .photo, decoder: decoder) { [weak self] photo in

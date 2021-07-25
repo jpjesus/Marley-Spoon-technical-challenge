@@ -23,9 +23,9 @@ class RecipeListViewController: UIViewController {
         return collection
     }()
     
-    private let viewModel: RecipeListViewModel
+    private var viewModel: RecipeListProtocol
     
-    init(with viewModel: RecipeListViewModel) {
+    init(with viewModel: RecipeListProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }

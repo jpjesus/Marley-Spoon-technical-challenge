@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C1896F826AB1BBA004015D0 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1896F726AB1BBA004015D0 /* UIImageView+Extension.swift */; };
-		1C18970B26AB2394004015D0 /* RecipeDetailVieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C18970A26AB2394004015D0 /* RecipeDetailVieModel.swift */; };
+		1C18970B26AB2394004015D0 /* RecipeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C18970A26AB2394004015D0 /* RecipeDetailViewModel.swift */; };
 		1C18971326AB26DF004015D0 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C18971226AB26DF004015D0 /* RecipeDetailViewController.swift */; };
 		1C18972226AB8F62004015D0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C18972126AB8F61004015D0 /* String+Extension.swift */; };
 		1C18972726AB9179004015D0 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C18972626AB9179004015D0 /* UINavigationController+Extensions.swift */; };
@@ -32,6 +32,13 @@
 		1C8DD80926A77DD1001C692F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD80826A77DD1001C692F /* UIViewController+Extension.swift */; };
 		1C8DD80E26A7AF98001C692F /* RecipeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD80D26A7AF98001C692F /* RecipeCellView.swift */; };
 		1C8DD81326A7B639001C692F /* StartMarleySpoonFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD81226A7B639001C692F /* StartMarleySpoonFlow.swift */; };
+		1CC5377B26ACA91C00BAC53D /* RecipeDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC5377A26ACA91C00BAC53D /* RecipeDetailProtocol.swift */; };
+		1CC5378626ACACF700BAC53D /* RecipeListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC5378526ACACF700BAC53D /* RecipeListProtocol.swift */; };
+		1CC5378B26ACAE1900BAC53D /* RecipeProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC5378A26ACAE1900BAC53D /* RecipeProviderProtocol.swift */; };
+		1CC5379126ACC04900BAC53D /* RecipeProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC5379026ACC04900BAC53D /* RecipeProviderMock.swift */; };
+		1CC537A026ACCE9600BAC53D /* RecipeListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC5379F26ACCE9600BAC53D /* RecipeListTests.swift */; };
+		1CC537A826ACF56700BAC53D /* RecipeDetailTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC537A726ACF56700BAC53D /* RecipeDetailTest.swift */; };
+		9F279C191C72B798A9E1DD2F /* Pods_MarleySpoonChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9F2CF35D731E7C4F45E771 /* Pods_MarleySpoonChallengeTests.framework */; };
 		FC9B2DE03F09887827F59767 /* Pods_MarleySpoonChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297BA4FC170D7961EE4A0D2A /* Pods_MarleySpoonChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +61,7 @@
 
 /* Begin PBXFileReference section */
 		1C1896F726AB1BBA004015D0 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
-		1C18970A26AB2394004015D0 /* RecipeDetailVieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailVieModel.swift; sourceTree = "<group>"; };
+		1C18970A26AB2394004015D0 /* RecipeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModel.swift; sourceTree = "<group>"; };
 		1C18971226AB26DF004015D0 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		1C18972126AB8F61004015D0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		1C18972626AB9179004015D0 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
@@ -84,8 +91,17 @@
 		1C8DD80826A77DD1001C692F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		1C8DD80D26A7AF98001C692F /* RecipeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCellView.swift; sourceTree = "<group>"; };
 		1C8DD81226A7B639001C692F /* StartMarleySpoonFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMarleySpoonFlow.swift; sourceTree = "<group>"; };
+		1CC5377A26ACA91C00BAC53D /* RecipeDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailProtocol.swift; sourceTree = "<group>"; };
+		1CC5378526ACACF700BAC53D /* RecipeListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListProtocol.swift; sourceTree = "<group>"; };
+		1CC5378A26ACAE1900BAC53D /* RecipeProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProviderProtocol.swift; sourceTree = "<group>"; };
+		1CC5379026ACC04900BAC53D /* RecipeProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProviderMock.swift; sourceTree = "<group>"; };
+		1CC5379F26ACCE9600BAC53D /* RecipeListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListTests.swift; sourceTree = "<group>"; };
+		1CC537A726ACF56700BAC53D /* RecipeDetailTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailTest.swift; sourceTree = "<group>"; };
 		297BA4FC170D7961EE4A0D2A /* Pods_MarleySpoonChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarleySpoonChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D9F2CF35D731E7C4F45E771 /* Pods_MarleySpoonChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarleySpoonChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E44E5CAADF1F8C4D2490E79 /* Pods-MarleySpoonChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarleySpoonChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MarleySpoonChallenge/Pods-MarleySpoonChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		92AC09CC86F3EE4C727E0509 /* Pods-MarleySpoonChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarleySpoonChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-MarleySpoonChallengeTests/Pods-MarleySpoonChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BAD4075EE0B651D7C03A05F /* Pods-MarleySpoonChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarleySpoonChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-MarleySpoonChallengeTests/Pods-MarleySpoonChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		E335E4E850B59BBD683ECD91 /* Pods-MarleySpoonChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarleySpoonChallenge.release.xcconfig"; path = "Target Support Files/Pods-MarleySpoonChallenge/Pods-MarleySpoonChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F279C191C72B798A9E1DD2F /* Pods_MarleySpoonChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +153,8 @@
 		1C18970926AB2179004015D0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				1C18970A26AB2394004015D0 /* RecipeDetailVieModel.swift */,
+				1CC5377A26ACA91C00BAC53D /* RecipeDetailProtocol.swift */,
+				1C18970A26AB2394004015D0 /* RecipeDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -194,6 +212,8 @@
 		1C8DD78926A72155001C692F /* MarleySpoonChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				1CC5379E26ACCE7E00BAC53D /* Tests */,
+				1CC5378F26ACB6D600BAC53D /* Mocks */,
 				1C8DD78A26A72155001C692F /* MarleySpoonChallengeTests.swift */,
 				1C8DD78C26A72155001C692F /* Info.plist */,
 			);
@@ -232,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				1C8DD7CE26A72D47001C692F /* RecipeProvider.swift */,
+				1CC5378A26ACAE1900BAC53D /* RecipeProviderProtocol.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -249,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				1C8DD7E726A76524001C692F /* RecipeListViewModel.swift */,
+				1CC5378526ACACF700BAC53D /* RecipeListProtocol.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -274,11 +296,30 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		1CC5378F26ACB6D600BAC53D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1CC5379026ACC04900BAC53D /* RecipeProviderMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		1CC5379E26ACCE7E00BAC53D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1CC5379F26ACCE9600BAC53D /* RecipeListTests.swift */,
+				1CC537A726ACF56700BAC53D /* RecipeDetailTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		498D958B0D1FEA233D60D815 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				7E44E5CAADF1F8C4D2490E79 /* Pods-MarleySpoonChallenge.debug.xcconfig */,
 				E335E4E850B59BBD683ECD91 /* Pods-MarleySpoonChallenge.release.xcconfig */,
+				92AC09CC86F3EE4C727E0509 /* Pods-MarleySpoonChallengeTests.debug.xcconfig */,
+				9BAD4075EE0B651D7C03A05F /* Pods-MarleySpoonChallengeTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -287,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				297BA4FC170D7961EE4A0D2A /* Pods_MarleySpoonChallenge.framework */,
+				7D9F2CF35D731E7C4F45E771 /* Pods_MarleySpoonChallengeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -317,9 +359,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C8DD79D26A72155001C692F /* Build configuration list for PBXNativeTarget "MarleySpoonChallengeTests" */;
 			buildPhases = (
+				A11D36E70565685919223FC1 /* [CP] Check Pods Manifest.lock */,
 				1C8DD78226A72155001C692F /* Sources */,
 				1C8DD78326A72155001C692F /* Frameworks */,
 				1C8DD78426A72155001C692F /* Resources */,
+				4C6147F163250EC7C31802F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -441,6 +485,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4C6147F163250EC7C31802F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarleySpoonChallengeTests/Pods-MarleySpoonChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarleySpoonChallengeTests/Pods-MarleySpoonChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarleySpoonChallengeTests/Pods-MarleySpoonChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A11D36E70565685919223FC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarleySpoonChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AE242ED7439376724F48414E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -469,14 +552,17 @@
 				1C18972726AB9179004015D0 /* UINavigationController+Extensions.swift in Sources */,
 				1C8DD80926A77DD1001C692F /* UIViewController+Extension.swift in Sources */,
 				1C8DD7DE26A73A18001C692F /* Tag.swift in Sources */,
+				1CC5377B26ACA91C00BAC53D /* RecipeDetailProtocol.swift in Sources */,
 				1C8DD77826A72152001C692F /* ViewController.swift in Sources */,
 				1C8DD7F926A773E5001C692F /* UIView+Extension.swift in Sources */,
-				1C18970B26AB2394004015D0 /* RecipeDetailVieModel.swift in Sources */,
+				1C18970B26AB2394004015D0 /* RecipeDetailViewModel.swift in Sources */,
 				1C8DD80126A77688001C692F /* UIColor+Extension.swift in Sources */,
 				1C8DD7ED26A76AD8001C692F /* RecipeListViewController.swift in Sources */,
 				1C8DD77426A72152001C692F /* AppDelegate.swift in Sources */,
 				1C8DD77626A72152001C692F /* SceneDelegate.swift in Sources */,
+				1CC5378B26ACAE1900BAC53D /* RecipeProviderProtocol.swift in Sources */,
 				1C18972226AB8F62004015D0 /* String+Extension.swift in Sources */,
+				1CC5378626ACACF700BAC53D /* RecipeListProtocol.swift in Sources */,
 				1C8DD81326A7B639001C692F /* StartMarleySpoonFlow.swift in Sources */,
 				1C8DD7E826A76524001C692F /* RecipeListViewModel.swift in Sources */,
 				1C8DD7AB26A7221C001C692F /* Recipe.swift in Sources */,
@@ -492,6 +578,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC537A826ACF56700BAC53D /* RecipeDetailTest.swift in Sources */,
+				1CC537A026ACCE9600BAC53D /* RecipeListTests.swift in Sources */,
+				1CC5379126ACC04900BAC53D /* RecipeProviderMock.swift in Sources */,
 				1C8DD78B26A72155001C692F /* MarleySpoonChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,6 +786,7 @@
 		};
 		1C8DD79E26A72155001C692F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92AC09CC86F3EE4C727E0509 /* Pods-MarleySpoonChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -719,6 +809,7 @@
 		};
 		1C8DD79F26A72155001C692F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BAD4075EE0B651D7C03A05F /* Pods-MarleySpoonChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

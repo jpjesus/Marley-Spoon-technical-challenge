@@ -24,15 +24,6 @@ class RecipeDetailViewController: UIViewController {
         return image
     }()
     
-    lazy var descriptionView: UITextView = {
-        let textView = UITextView()
-        textView.translatesAutoresizingMaskIntoConstraints = false
-        textView.isEditable = false
-        textView.textAlignment = .left
-        textView.setupRoundedCorners(radius: 14)
-        return textView
-    }()
-    
     lazy var recipeLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
@@ -41,6 +32,18 @@ class RecipeDetailViewController: UIViewController {
         label.numberOfLines = 0
         label.textColor = UIColor.label
         label.accessibilityIdentifier = "Recipe name"
+        return label
+    }()
+    
+    lazy var tagLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .left
+        label.font = UIFont.boldSystemFont(ofSize: 11)
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        label.textColor = UIColor.label
+        label.text = "Tags: "
+        label.isHidden = true
         return label
     }()
     
@@ -81,9 +84,9 @@ class RecipeDetailViewController: UIViewController {
         return collection
     }()
     
-    private let viewModel: RecipeDetailVieModel
+    private let viewModel: RecipeDetailProtocol
     
-    init(with viewModel: RecipeDetailVieModel) {
+    init(with viewModel: RecipeDetailProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -108,12 +111,13 @@ class RecipeDetailViewController: UIViewController {
     }
     
     private func addSubviews() {
-        self.view.addSubview(containerView)
-        self.view.addSubview(recipeImage)
-        self.view.addSubview(recipeLabel)
-        self.view.addSubview(chefLabel)
-        self.view.addSubview(descriptionArea)
-        self.view.addSubview(tagCollectionView)
+        view.addSubview(containerView)
+        view.addSubview(recipeImage)
+        view.addSubview(recipeLabel)
+        view.addSubview(chefLabel)
+        view.addSubview(descriptionArea)
+        view.addSubview(tagLabel)
+        view.addSubview(tagCollectionView)
     }
     
     private func setViewsContrainst() {
@@ -122,6 +126,7 @@ class RecipeDetailViewController: UIViewController {
         setRecipeLabelConstrains()
         setHeadLineLabelConstrains()
         setDescriptionTextConstrains()
+        setTagLabelConstrains()
         setTagCollectionConstraints()
     }
     
@@ -143,6 +148,7 @@ class RecipeDetailViewController: UIViewController {
     private func setCollectionLayout() {
         let tagsCount = viewModel.getRecipe().tags.count
         if tagsCount > 0 {
+            tagLabel.isHidden = false
             tagCollectionView.reloadData()
         }
     }
@@ -194,11 +200,19 @@ private extension RecipeDetailViewController {
         descriptionArea.widthAnchor.constraint(lessThanOrEqualTo: containerView.widthAnchor, multiplier: 1).isActive = true
     }
     
+    private func setTagLabelConstrains() {
+        tagLabel.translatesAutoresizingMaskIntoConstraints = false
+        tagLabel.topAnchor.constraint(equalTo: descriptionArea.bottomAnchor, constant: 2).isActive = true
+        tagLabel.bottomAnchor.constraint(equalTo: tagCollectionView.topAnchor, constant: -5).isActive = true
+        tagLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 15).isActive = true
+        tagLabel.widthAnchor.constraint(greaterThanOrEqualTo: containerView.widthAnchor, multiplier: 1).isActive = true
+        tagLabel.heightAnchor.constraint(equalToConstant: 15).isActive = true
+    }
+    
     private func setTagCollectionConstraints() {
         tagCollectionView.translatesAutoresizingMaskIntoConstraints = false
         tagCollectionView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -10).isActive = true
         tagCollectionView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 10).isActive = true
-        tagCollectionView.topAnchor.constraint(equalTo: descriptionArea.bottomAnchor, constant: 5).isActive = true
         tagCollectionView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -5).isActive = true
         tagCollectionView.heightAnchor.constraint(equalToConstant: 20).isActive = true
     }

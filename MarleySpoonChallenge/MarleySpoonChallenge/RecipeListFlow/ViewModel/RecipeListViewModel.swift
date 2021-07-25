@@ -9,28 +9,31 @@ import Foundation
 import Contentful
 import UIKit
 
-class RecipeListViewModel {
+class RecipeListViewModel: RecipeListProtocol {
     
-   private let provider: RecipeProvider
-   var recipes: [Recipe] = []
-     
-    init(with provider: RecipeProvider) {
+    private let provider: RecipeProviderProtocol
+    var recipes: [Recipe] = []
+    
+    init(with provider: RecipeProviderProtocol) {
         self.provider = provider
     }
     
     func fetchRecipes(with navigation: UINavigationController?, completion: @escaping (([Recipe]) -> Void)) {
         provider.getRecipeList { result in
-            switch result {
-            case .success(let response):
-                completion(response.items)
-            case .failure(let error):
-                return
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let response):
+                    completion(response)
+                case .failure(let error):
+                    UIViewController.showErrorAlert(with: navigation,
+                                                    message: error.localizedDescription)
+                }
             }
         }
     }
     
     func showRecipeDetail(with recipe: Recipe, navigation: UINavigationController?) {
-        let viewModel = RecipeDetailVieModel(with: recipe)
+        let viewModel = RecipeDetailViewModel(with: recipe)
         let vc = RecipeDetailViewController(with: viewModel)
         navigation?.modalTransitionStyle = .coverVertical
         navigation?.modalPresentationStyle = .fullScreen
