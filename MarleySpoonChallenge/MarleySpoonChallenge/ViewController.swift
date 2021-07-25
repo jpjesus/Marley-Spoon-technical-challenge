@@ -11,9 +11,5 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var aaaaaa = RecipeProvider()
-        aaaaaa.getRecipeList { a in
-          print(a)
-        }
     }
 }
