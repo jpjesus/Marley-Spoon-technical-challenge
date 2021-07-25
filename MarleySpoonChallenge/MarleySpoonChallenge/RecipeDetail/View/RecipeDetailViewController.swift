@@ -142,7 +142,7 @@ class RecipeDetailViewController: UIViewController {
     }
     
     private func setRecipeImage(with image: URL?, fileName: String) {
-        recipeImage.loadImage(withUrl: image, fileName: fileName)
+        _ = recipeImage.loadImage(withUrl: image, fileName: fileName)
     }
     
     private func setCollectionLayout() {

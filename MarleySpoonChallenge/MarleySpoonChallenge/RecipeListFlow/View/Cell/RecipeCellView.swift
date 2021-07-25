@@ -35,6 +35,7 @@ class RecipeCellView: UICollectionViewCell {
     }()
     
     private var recipe: Recipe?
+    private var imageTask: URLSessionTask?
     static var identifier = "RecipeCellView"
     
     override init(frame: CGRect) {
@@ -42,6 +43,13 @@ class RecipeCellView: UICollectionViewCell {
         self.backgroundColor = UIColor.background
         addSubviews()
         setConstraints()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageTask?.cancel()
+        recipeImage.image = nil
+        recipeLabel.text = ""
     }
     
     required init?(coder: NSCoder) {
@@ -56,7 +64,7 @@ class RecipeCellView: UICollectionViewCell {
     }
     
     private func setRecipeImage(with image: URL?, fileName: String) {
-        recipeImage.loadImage(withUrl: image, fileName: fileName)
+        imageTask = recipeImage.loadImage(withUrl: image, fileName: fileName)
     }
     
     private func addSubviews() {

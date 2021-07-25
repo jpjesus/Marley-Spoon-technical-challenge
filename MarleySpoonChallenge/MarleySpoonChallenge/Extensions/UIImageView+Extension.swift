@@ -14,13 +14,15 @@ extension UIImageView {
         get { return NSCache<NSString, UIImage>() }
     }
     
-    func loadImage(withUrl url: URL?, fileName: String) {
-        if url == nil { return }
+    func loadImage(withUrl url: URL?, fileName: String) -> URLSessionTask? {
+        guard let url = url else {
+            return nil
+        }
         self.image = nil
         
         if let cachedImage = imageCache.object(forKey: fileName as NSString)  {
             self.image = cachedImage
-            return
+            return nil
         }
         
         let loaderColor = traitCollection.userInterfaceStyle == .dark ? UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium) :
@@ -29,9 +31,9 @@ extension UIImageView {
         addSubview(activityIndicator)
         activityIndicator.startAnimating()
         activityIndicator.center = self.center
-        URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
+        let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
             if error != nil {
-                print(error!)
+                print(error ?? "")
                 return
             }
             
@@ -43,6 +45,8 @@ extension UIImageView {
                     activityIndicator.removeFromSuperview()
                 }
             }
-        }).resume()
+        })
+        task.resume()
+        return task
     }
 }
