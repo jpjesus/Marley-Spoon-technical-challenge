@@ -7,7 +7,9 @@
 
 import Foundation
 import Contentful
-
+/**
+    Class that represent Chef for a recipe.
+*/
 class Chef: EntryDecodable, FieldKeysQueryable {
     
     static let contentTypeId: String = "chef"

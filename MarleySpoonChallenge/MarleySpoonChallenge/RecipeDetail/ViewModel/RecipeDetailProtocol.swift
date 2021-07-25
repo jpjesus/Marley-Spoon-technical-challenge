@@ -10,5 +10,4 @@ import Foundation
 protocol RecipeDetailProtocol {
     
     func getRecipe() -> Recipe
-    init(with recipe: Recipe)
 }

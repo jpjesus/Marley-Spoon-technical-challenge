@@ -10,7 +10,7 @@ import Contentful
 import UIKit
 
 class RecipeListViewModel: RecipeListProtocol {
-    
+    // MARK: UI Elements
     private let provider: RecipeProviderProtocol
     var recipes: [Recipe] = []
     
